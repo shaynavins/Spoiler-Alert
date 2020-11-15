@@ -1,0 +1,22 @@
+{
+    "name": "Spoiler Alert", 
+    "version": "0.001",
+    "manifest_version": 2, 
+    "description": "Searching up something about your current book? Oh no, spoilers! Spoiler Alert blocks them out for you! Read well, bookworms!",
+    
+    "content_scripts": [{
+        "matches": ["<all_urls>"],
+        "js": ["content.js"]
+    }
+    ],
+    "icons": {
+        "150": "logo.png"
+      },
+      
+
+    "browser_action": {
+        "default_popup": "popup.html", 
+        "default_title": "look out!" 
+    }
+
+}
